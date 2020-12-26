@@ -1,0 +1,5 @@
+index:
+  enabled: on
+
+all:
+  with_layout: true

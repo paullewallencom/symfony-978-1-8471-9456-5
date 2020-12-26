@@ -1,0 +1,9 @@
+## YAML Template.
+dev:
+  mailer_deliver: true
+
+all:
+  mailer_deliver: true
+  mailer_subject: Milkshake Newsletter
+  mailer_from_name: Tim
+  mailer_from_email: no-reply@milkshake

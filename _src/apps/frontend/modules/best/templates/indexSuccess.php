@@ -1,0 +1,1 @@
+<?php echo image_tag('/images/charts/pie_chart.jpg') ?>

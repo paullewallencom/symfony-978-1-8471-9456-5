@@ -1,0 +1,38 @@
+milkshake:
+  class: sfPropelRouteCollection
+  options:
+    model:                Milkshake
+    module:               milkshakes
+    prefix_path:          milkshakes
+    column:               id
+    with_wildcard_routes: true
+
+vacancy:
+  class: sfPropelRouteCollection
+  options:
+    model:                Vacancy
+    module:               vacancies
+    prefix_path:          vacancies
+    column:               id
+    with_wildcard_routes: true
+
+store_location:
+  class: sfPropelRouteCollection
+  options:
+    model:                StoreLocation
+    module:               store_location
+    prefix_path:          store_location
+    column:               id
+    with_wildcard_routes: true
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

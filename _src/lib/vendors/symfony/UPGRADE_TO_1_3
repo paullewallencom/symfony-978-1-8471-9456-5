@@ -1,0 +1,312 @@
+Upgrading Projects from 1.2 to 1.3
+==================================
+
+This document describes the changes made in symfony 1.3 and what need
+to be done to upgrade your symfony 1.2 projects.
+
+If you want more detailed information on what has been changed/added in symfony 1.3,
+you can read the [What's new?](http://www.symfony-project.org/tutorial/1_3/whats-new) tutorial.
+
+>**CAUTION**
+>symfony 1.3 is compatible with PHP 5.2.4 or later.
+>It might also work with PHP 5.2.0 to 5.2.3 but there is no guarantee.
+
+How to upgrade?
+---------------
+
+To upgrade a project:
+
+  * Check that all plugins used by your project are compatible with symfony
+    1.3
+
+  * If you don't use a SCM tool, please make a backup of your project.
+
+  * Upgrade symfony to 1.3
+
+  * Upgrade the plugins to their 1.3 version
+
+  * Launch the `project:upgrade1.3` task from your project directory
+    to perform an automatic upgrade:
+
+        $ php symfony project:upgrade1.3
+
+    This task can be launched several times without any side effect. Each time
+    you upgrade to a new symfony 1.3 beta / RC or the final symfony 1.3, you
+    have to launch this task.
+
+  * You need to rebuild your models and forms due to some changes described
+    below:
+
+        $ php symfony doctrine:build-model
+        $ php symfony doctrine:build-forms
+        $ php symfony doctrine:build-filters
+
+  * Clear the cache:
+
+        $ php symfony cc
+
+The remaining sections explain the main changes made in symfony 1.3 that need
+some kind of upgrade (automatic or not).
+
+Deprecated/Removed settings, classes, methods, functions, and tasks
+-------------------------------------------------------------------
+
+Symfony 1.3 is the last version for which the sfCompat10Plugin plugin is
+included. The plugin will be removed in symfony 1.4.
+
+The following methods and functions have been deprecated in symfony 1.3 or
+before, and will be removed in symfony 1.4:
+
+  * `sfToolkit::getTmpDir()`: You can replace all occurrences of this method
+    by `sys_get_temp_dir()`
+
+  * `sfForm::setInvalidMessage()`: You can replace it by a call to the new
+    `sfForm::setDefaultMessage()` method
+
+  * `sfForm::setRequiredMessage()`: You can replace it by a call to the new
+    `sfForm::setDefaultMessage()` method
+
+  * `sfTesterResponse::contains()`: You can use the more powerful `matches()`
+    method
+
+  * `sfTestFunctionalBase` following methods: `isRedirected()`,
+    `isStatusCode()`, `responseContains()`, `isRequestParameter()`,
+    `isResponseHeader()`, `isUserCulture()`, `isRequestFormat()`, and
+    `checkResponseElement()`: These methods have been deprecated since 1.2,
+    and replaced with the tester classes.
+
+  * `sfFilesystem::sh()`: You can replace all occurrences of this method by
+    calls to the new `sfFilesystem::execute()` method. Be warned that the
+    returned value of this method is an array composed of the `stdout` output
+    and the `stderr` output.
+
+  * `sfAction::getDefaultView()`, `sfAction::handleError()`,
+    `sfAction::validate()`: These methods have been deprecated in symfony 1.1,
+    and they was not really useful. As of symfony 1.1, they need the
+    `compat_10` setting set to `on` to work.
+
+  * `sfComponent::debugMessage()`: Use the `log_message()` helper instead.
+
+  * `sfApplicationConfiguration::loadPluginConfig()`: Use
+    `initializePlugins()` instead.
+
+  * `sfLoader::getHelperDirs()` and `sfLoader::loadHelpers()`: Use the same
+    methods from the `sfApplicationConfiguration` object. As all methods of
+    the class `sfLoader` are deprecated, the `sfLoader` class will be removed
+    in symfony 1.4.
+
+  * `sfController::sendEmail()`
+
+  * `sfGeneratorManager::initialize()`: It does nothing.
+
+  * `debug_message()`: Use the `log_message()` helper instead.
+
+  * `sfWebRequest::getMethodName()`: Use `getMethod()` instead.
+
+  * `sfDomCssSelector::getTexts()` and `sfDomCssSelector::getElements()`
+
+The following methods and functions have been removed in symfony 1.3:
+
+  * `sfApplicationConfiguration::checkSymfonyVersion()`: see below for the
+    explanation (`check_symfony_version` setting)
+
+The following settings (managed in the `settings.yml` configuration file) have
+been removed from symfony 1.3:
+
+  * `check_symfony_version`: This setting was introduced years ago to allow
+    automatic cache cleaning in case of a change of the symfony version. It
+    was mainly useful for shared hosting configuration where the symfony
+    version is shared amongst all customers. As this is bad practice since
+    symfony 1.1 (you need to embed the symfony version in each of your
+    project), the settings does not make sense anymore. Moreover, when the
+    setting is set to `on`, the check adds a small overhead to each request,
+    as we need to get the content of a file.
+
+  * `max_forwards`: This settings controls the number of forwards allowed
+    before symfony throws an exception. Making it configurable has no value.
+    If you need more than 5 forwards, you have both a conception problem and a
+    performance one.
+
+  * `sf_lazy_cache_key`: Introduced as a big performance improvement in
+    symfony 1.2.6, this setting allowed you to turn on a lazy cache key
+    generation for the view cache. While we think doing it lazy was the best
+    idea, some people might have relied on `sfViewCacheManager::isCacheable()`
+    being called even when the action itself wasn't cacheable. As of symfony
+    1.3, the behavior is the same as if `sf_lazy_cache_key` was set to `true`.
+
+  * `strip_comments`: The `strip_comments` was introduced to be able to
+    disable the comment stripping because of some bugs in the tokenizer of
+    some PHP 5.0.X versions. It was also used later on to avoid large memory
+    consumption when the Tokenizer extension was not compiled with PHP. The
+    first problem is not relevant anymore as the minimum version of PHP needed
+    is 5.2 and the second one has already been fixed by removing the regular
+    expression that simulated the comment stripping.
+
+The following classes have been removed in symfony 1.3:
+
+  * `sfCommonFilter`: see the "Removal of the common filter" section for more
+    information about the consequences and how to migrate your code.
+
+The following tasks have been removed in symfony 1.3:
+
+  * `project:freeze` and `project:unfreeze`: These tasks used to embed the
+    symfony version used by a project inside the project itself. They are not
+    needed anymore as the best practice has been to embed symfony in the
+    project for a very long time now. Moreover, switching from one version of
+    symfony to another is really simple now as you only need to change the
+    path in the `ProjectConfiguration` class. Embedding by hand symfony is
+    also very simple as you just need to copy the whole symfony directory
+    somewhere in your project (`lib/vendor/symfony/` is the recommended one).
+
+The following tasks are deprecated in symfony 1.3, and will be removed in
+symfony 1.4:
+
+  * All symfony 1.0 task aliases.
+
+The following behaviors are deprecated in symfony 1.3, and will be removed in
+symfony 1.4:
+
+  * The `sfParameterHolder::get()`, `sfParameterHolder::has()`,
+    `sfParameterHolder::remove()`, `sfNamespacedParameterHolder::get()`,
+    `sfNamespacedParameterHolder::has()`, and
+    `sfNamespacedParameterHolder::remove()` methods support for the array
+    notation (`[]`) is deprecated and won't be available in symfony 1.4
+    (better for performance).
+
+The symfony CLI does not accept anymore the global `--dry-run` option as it
+was not used by any symfony built-in task. If one of your task relies on this
+option, you can just add it as a local option of your task class.
+
+Autoloading
+-----------
+
+As of symfony 1.3, the files under the `lib/vendor/` directory are not
+autoloaded anymore by default. If you want to autoload some `lib/vendor/`
+sub-directories, add a new entry in the application `autoload.yml`
+configuration file:
+
+    [yml]
+    autoload:
+      vendor_some_lib:
+        name:      vendor_some_lib
+        path:      %SF_LIB_DIR%/vendor/some_lib_dir
+        recursive: on
+
+The automatic autoloading of the `lib/vendor/` directory was problematic for
+several reasons:
+
+  * If you put a library under the `lib/vendor/` directory that already has an
+    autoload mechanism, symfony will re-parse the files and add a bunch of
+    unneeded information in the cache
+    (see #5893 - http://trac.symfony-project.org/ticket/5893).
+
+  * If your symfony directory is not exactly named `lib/vendor/symfony/`, the
+    project autoloader will re-parse the whole symfony directory and some
+    problems might occur
+    (see #6064 - http://trac.symfony-project.org/ticket/6064).
+
+Routing
+-------
+
+The `sfPatternRouting::setRoutes()`, `sfPatternRouting::prependRoutes()`,
+`sfPatternRouting::insertRouteBefore()`, and `sfPatternRouting::connect()`
+methods do not return the routes as an array as they did in previous versions.
+
+JavaScripts and Stylesheets
+---------------------------
+
+### Removal of the common filter
+
+The `sfCommonFilter` has been removed. This filter used to automatically
+inject the JavaScripts and stylesheets tags into the response content. You now
+need to manually include these assets by explicitly call the
+`include_stylesheets()` and `include_javascripts()` helpers in your layout:
+
+    [php]
+    <?php include_javascripts() ?>
+    <?php include_stylesheets() ?>
+
+It has been removed for several reasons:
+
+ * We already have a better, simple, and more flexible solution (the
+   `include_stylesheets()` and `include_javascripts()` helpers)
+
+ * Even if the filter can be easily disabled, it is not an easy task as you
+   must first know about its existence and its "behind the scene" magic work
+
+ * Using the helpers provides more fined-grained control over when and where
+   the assets are included in the layout (the stylesheets in the `head` tag,
+   and the JavaScripts just before the end of the `body` tag for instance)
+
+ * It is always better to be explicit, rather than implicit (no magic and no
+   WTF effect; see the user mailing-list for a lot of complaints on this
+   issue)
+
+ * It provides a small speed improvement
+
+How to upgrade?
+
+  * The `common` filter need to be removed from all `filters.yml`
+    configuration files (this is automatically done by the
+    `project:upgrade1.3` task).
+
+  * You need to add `include_stylesheets()` and `include_javascripts()` calls
+    in your layout(s) to have the same behavior as before (this is
+    automatically done by the `project:upgrade1.3` task for HTML layouts
+    contained in the `templates/` directories of your applications - they must
+    have a `<head>` tag though; and you need to manually upgrade any other
+    layout, or any page that does not have a layout but still relies on
+    JavaScripts files and/or stylesheets).
+
+Tasks
+-----
+
+### Formatters
+
+The `sfFormatter::format()` third argument has been removed.
+
+Escaping
+--------
+
+The `esc_js_no_entities()`, refered to by `ESC_JS_NO_ENTITIES` was updated to
+correctly handle non-ANSI characters. Before this change only characters with
+ANSI value `37` to `177` were not escaped. Now it will only escape backslashes
+`\`, quotes `'` & `"` and linebreaks `\n` & `\r`.
+
+Doctrine Integration
+--------------------
+
+### Required Doctrine Version
+
+The externals to Doctrine have been updated to use the latest and greatest 
+Doctrine 1.2 version. You can read about what is new in Doctrine 1.2 
+[here](http://www.doctrine-project.org/upgrade/1_2).
+
+### Admin Generator Delete
+
+The admin generator batch delete was changed to fetch the records and issue the
+`delete()` method to each one individually instead of issuing a single DQL query
+to delete them all. The reason is so that events for deleting each individual 
+record are invoked.
+
+### Override Doctrine Plugin Schema
+
+You can override the model included in a plugins YAML schema simply by defining 
+that same model in your local schema.
+
+See: http://trac.symfony-project.org/ticket/6656
+
+With this change you could now create `config/doctrine/sfGuardUser.schema.yml` 
+with the following inside.
+
+    sfGuardUser:
+      package: sfDoctrineGuardPlugin.lib.model.doctrine
+      # ...
+
+You can customize the schema and your local version will be used instead of the
+one included in the plugin.
+
+> **NOTE**
+> The package option is a feature of Doctrine and is used for the schemas of
+> symfony plugins. This does not mean the package feature can be used independently
+> to package your models. It must be used directly and only with symfony plugins.

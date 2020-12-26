@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Vacancy
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          vacancy
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        store_location:
+          label: 'Location'
+        position_description:
+          label: 'Description'
+          help: 'Describe a position'
+      list:
+        display: [=position, store_location, _closing_date]
+      filter:
+        class: -
+      form:    ~
+      edit:    ~
+      new:     ~

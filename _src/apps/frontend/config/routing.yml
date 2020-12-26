@@ -1,0 +1,40 @@
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+menu:
+  url:  /menu/:page
+  class: sfRequestRoute
+  param: { module: menu, action: index, page:1 }
+  requirements:
+     page: \d+
+     sf_method: [get]
+
+menu_item:
+  url: /menu/milkshake/:url_slug
+  class:   sfPropelRoute
+  options: { model: MilkShake, type: object }
+  param: { module: menu, action: milkshake}
+
+locations:
+  url:   /locations
+  param: { module: location, action: index }
+
+vacancies:
+  url:   /:sf_culture/vacancies
+  param: { module: vacancies, action: index }
+  requirements:
+    {sf_culture: (?:en_AU|en_GB|fr_FR)}
+
+best:
+  url: /best
+  param: { module: best, action: index}
+
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

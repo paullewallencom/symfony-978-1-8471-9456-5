@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           StoreLocation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          store_location
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Store Locations List
+        display: [=city, country, phone, fax]
+      filter:
+        class: -
+      form:    ~
+      edit:
+        title:  Edit Location for: %%city%%
+      new:     ~

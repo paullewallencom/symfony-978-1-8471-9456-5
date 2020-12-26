@@ -1,0 +1,290 @@
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Sep 04 14:13:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php on line 72 (Memcache::pconnect() [<a href='memcache.pconnect'>memcache.pconnect</a>]: Server localhost (tcp 11211, udp 0) failed with: Connection refused (111))
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php on line 72 (Memcache::pconnect() [<a href='memcache.pconnect'>memcache.pconnect</a>]: Can't connect to localhost:11211, Connection refused (111))
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/exception/sfException.class.php on line 97 (Cannot modify header information - headers already sent by (output started at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php:72))
+Sep 04 14:13:47 symfony [err] {sfInitializationException} Unable to connect to the memcache server (localhost:11211).
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/exception/sfException.class.php on line 150 (Cannot modify header information - headers already sent by (output started at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php:72))
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:13:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Sep 04 14:13:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php on line 72 (Memcache::pconnect() [<a href='memcache.pconnect'>memcache.pconnect</a>]: Server localhost (tcp 11211, udp 0) failed with: Connection refused (111))
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php on line 72 (Memcache::pconnect() [<a href='memcache.pconnect'>memcache.pconnect</a>]: Can't connect to localhost:11211, Connection refused (111))
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/exception/sfException.class.php on line 97 (Cannot modify header information - headers already sent by (output started at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php:72))
+Sep 04 14:13:47 symfony [err] {sfInitializationException} Unable to connect to the memcache server (localhost:11211).
+Sep 04 14:13:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/exception/sfException.class.php on line 150 (Cannot modify header information - headers already sent by (output started at /home/timmy/workspace/milkshake/lib/vendors/symfony/lib/cache/sfMemcacheCache.class.php:72))
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Sep 04 14:14:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:14:26 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:14:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:14:26 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Sep 04 14:14:26 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/modules/home/templates/indexSuccess.php"
+Sep 04 14:14:26 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:14:26 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:14:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:14:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:14:26 symfony [info] {sfWebDebugLogger} Configuration 52.32 ms (11)
+Sep 04 14:14:26 symfony [info] {sfWebDebugLogger} Action "home/index" 0.89 ms (1)
+Sep 04 14:14:26 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 32.38 ms (1)
+Sep 04 14:14:27 symfony [info] {sfWebResponse} Send content (121141 o)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:29 symfony [info] {sfPatternRouting} Match route "locations" (/locations) for /locations with parameters array (  'module' => 'location',  'action' => 'index',)
+Sep 04 14:14:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:14:29 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:14:29 symfony [info] {sfViewCacheManager} Cache for "location/index" does not exist
+Sep 04 14:14:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:14:29 symfony [info] {locationActions} Call "locationActions->executeIndex()"
+Sep 04 14:14:31 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:14:31 symfony [debug] {sfPropelLogger} prepare: SELECT store_locations.ID, store_locations.ADDRESS1, store_locations.ADDRESS2, store_locations.ADDRESS3, store_locations.POSTCODE, store_locations.CITY, store_locations.COUNTRY, store_locations.PHONE, store_locations.FAX FROM `store_locations` ORDER BY store_locations.COUNTRY ASC,store_locations.CITY ASC
+Sep 04 14:14:31 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/modules/location/templates/indexSuccess.php"
+Sep 04 14:14:31 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:14:31 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:14:31 symfony [info] {sfViewCacheManager} Save cache for "location/index"
+Sep 04 14:14:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:14:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:14:31 symfony [info] {sfWebResponse} Send header "Expires: Sat, 05 Sep 2009 13:14:31 GMT"
+Sep 04 14:14:31 symfony [info] {sfWebResponse} Send header "Cache-Control: max-age=86400"
+Sep 04 14:14:31 symfony [info] {sfWebDebugLogger} Configuration 897.04 ms (12)
+Sep 04 14:14:31 symfony [info] {sfWebDebugLogger} Action "location/index" 1500.17 ms (1)
+Sep 04 14:14:31 symfony [info] {sfWebDebugLogger} View "Success" for "location/index" 48.00 ms (1)
+Sep 04 14:14:32 symfony [info] {sfWebResponse} Send content (140763 o)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:14:34 symfony [info] {sfPatternRouting} Match route "signup" (/signup) for /signup with parameters array (  'module' => 'signup',  'action' => 'index',)
+Sep 04 14:14:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:14:34 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:14:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:14:34 symfony [info] {signupActions} Call "signupActions->executeIndex()"
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:25:12 symfony [info] {sfPatternRouting} Match route "signup" (/signup) for /signup with parameters array (  'module' => 'alSignup',  'action' => 'index',)
+Sep 04 14:25:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:25:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:25:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:25:12 symfony [info] {alSignupActions} Call "alSignupActions->executeIndex()"
+Sep 04 14:25:13 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:25:13 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:25:13 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:25:14 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:14 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:25:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:25:14 symfony [info] {sfWebDebugLogger} Configuration 104.91 ms (11)
+Sep 04 14:25:14 symfony [info] {sfWebDebugLogger} Action "alSignup/index" 82.90 ms (1)
+Sep 04 14:25:14 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/index" 1087.97 ms (1)
+Sep 04 14:25:16 symfony [info] {sfWebResponse} Send content (116679 o)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:25:34 symfony [info] {sfPatternRouting} Match route "signup" (/signup) for /signup with parameters array (  'module' => 'alSignup',  'action' => 'index',)
+Sep 04 14:25:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:25:35 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:25:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:25:35 symfony [info] {alSignupActions} Call "alSignupActions->executeIndex()"
+Sep 04 14:25:35 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:25:35 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:25:35 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:25:35 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:35 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:25:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:25:35 symfony [info] {sfWebDebugLogger} Configuration 1742.78 ms (10)
+Sep 04 14:25:35 symfony [info] {sfWebDebugLogger} Action "alSignup/index" 29.07 ms (1)
+Sep 04 14:25:35 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/index" 104.80 ms (1)
+Sep 04 14:25:35 symfony [info] {sfWebResponse} Send content (116677 o)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:25:37 symfony [info] {sfPatternRouting} Match route "signup_submit" (/signup/submit) for /signup/submit with parameters array (  'module' => 'alSignup',  'action' => 'submit',)
+Sep 04 14:25:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:25:37 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:25:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:25:37 symfony [info] {alSignupActions} Call "alSignupActions->executeSubmit()"
+Sep 04 14:25:37 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:25:37 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_signups.ID, alsignup_newsletter_signups.FIRST_NAME, alsignup_newsletter_signups.SURNAME, alsignup_newsletter_signups.EMAIL, alsignup_newsletter_signups.ACTIVATION_KEY, alsignup_newsletter_signups.ACTIVATED, alsignup_newsletter_signups.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_signups.CREATED_AT, alsignup_newsletter_signups.UPDATED_AT FROM `alsignup_newsletter_signups` WHERE alsignup_newsletter_signups.EMAIL IS NULL  LIMIT 1
+Sep 04 14:25:37 symfony [info] {alSignupActions} Change template to "CURRENT/index"
+Sep 04 14:25:37 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:25:37 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:25:37 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:37 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:25:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:25:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:25:37 symfony [info] {sfWebDebugLogger} Configuration 5.01 ms (9)
+Sep 04 14:25:37 symfony [info] {sfWebDebugLogger} Action "alSignup/submit" 249.97 ms (1)
+Sep 04 14:25:37 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/submit" 27.22 ms (1)
+Sep 04 14:25:40 symfony [info] {sfWebResponse} Send content (123417 o)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:28:23 symfony [info] {sfPatternRouting} Match route "signup_submit" (/signup/submit) for /signup/submit with parameters array (  'module' => 'alSignup',  'action' => 'submit',)
+Sep 04 14:28:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:28:23 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:28:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:28:23 symfony [info] {alSignupActions} Call "alSignupActions->executeSubmit()"
+Sep 04 14:28:23 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:28:23 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_signups.ID, alsignup_newsletter_signups.FIRST_NAME, alsignup_newsletter_signups.SURNAME, alsignup_newsletter_signups.EMAIL, alsignup_newsletter_signups.ACTIVATION_KEY, alsignup_newsletter_signups.ACTIVATED, alsignup_newsletter_signups.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_signups.CREATED_AT, alsignup_newsletter_signups.UPDATED_AT FROM `alsignup_newsletter_signups` WHERE alsignup_newsletter_signups.EMAIL IS NULL  LIMIT 1
+Sep 04 14:28:23 symfony [info] {alSignupActions} Change template to "CURRENT/index"
+Sep 04 14:28:23 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:28:23 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:28:23 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:28:23 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:28:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:28:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:28:23 symfony [info] {sfWebDebugLogger} Configuration 974.54 ms (9)
+Sep 04 14:28:23 symfony [info] {sfWebDebugLogger} Action "alSignup/submit" 26.31 ms (1)
+Sep 04 14:28:23 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/submit" 29.64 ms (1)
+Sep 04 14:28:23 symfony [info] {sfWebResponse} Send content (123524 o)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:28:28 symfony [info] {sfPatternRouting} Match route "signup_submit" (/signup/submit) for /signup/submit with parameters array (  'module' => 'alSignup',  'action' => 'submit',)
+Sep 04 14:28:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:28:28 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:28:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:28:28 symfony [info] {alSignupActions} Call "alSignupActions->executeSubmit()"
+Sep 04 14:28:28 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:28:28 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_signups.ID, alsignup_newsletter_signups.FIRST_NAME, alsignup_newsletter_signups.SURNAME, alsignup_newsletter_signups.EMAIL, alsignup_newsletter_signups.ACTIVATION_KEY, alsignup_newsletter_signups.ACTIVATED, alsignup_newsletter_signups.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_signups.CREATED_AT, alsignup_newsletter_signups.UPDATED_AT FROM `alsignup_newsletter_signups` WHERE alsignup_newsletter_signups.EMAIL IS NULL  LIMIT 1
+Sep 04 14:28:28 symfony [info] {alSignupActions} Change template to "CURRENT/index"
+Sep 04 14:28:28 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:28:28 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:28:28 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:28:28 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:28:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:28:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:28:28 symfony [info] {sfWebDebugLogger} Configuration 5.12 ms (9)
+Sep 04 14:28:28 symfony [info] {sfWebDebugLogger} Action "alSignup/submit" 120.90 ms (1)
+Sep 04 14:28:28 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/submit" 41.77 ms (1)
+Sep 04 14:28:29 symfony [info] {sfWebResponse} Send content (123357 o)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:29:02 symfony [info] {sfPatternRouting} Match route "signup_submit" (/signup/submit) for /signup/submit with parameters array (  'module' => 'alSignup',  'action' => 'submit',)
+Sep 04 14:29:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:29:02 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:29:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:29:02 symfony [info] {alSignupActions} Call "alSignupActions->executeSubmit()"
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRequestRoute "menu" (/menu/:page)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfPropelRoute "menu_item" (/menu/milkshake/:url_slug)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "locations" (/locations)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "vacancies" (/:sf_culture/vacancies)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "best" (/best)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "signup" (/signup)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Connect sfRoute "signup_submit" (/signup/submit)
+Sep 04 14:29:10 symfony [info] {sfPatternRouting} Match route "signup_submit" (/signup/submit) for /signup/submit with parameters array (  'module' => 'alSignup',  'action' => 'submit',)
+Sep 04 14:29:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 14:29:10 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Sep 04 14:29:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 14:29:10 symfony [info] {alSignupActions} Call "alSignupActions->executeSubmit()"
+Sep 04 14:29:10 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Sep 04 14:29:10 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_signups.ID, alsignup_newsletter_signups.FIRST_NAME, alsignup_newsletter_signups.SURNAME, alsignup_newsletter_signups.EMAIL, alsignup_newsletter_signups.ACTIVATION_KEY, alsignup_newsletter_signups.ACTIVATED, alsignup_newsletter_signups.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_signups.CREATED_AT, alsignup_newsletter_signups.UPDATED_AT FROM `alsignup_newsletter_signups` WHERE alsignup_newsletter_signups.EMAIL IS NULL  LIMIT 1
+Sep 04 14:29:10 symfony [info] {alSignupActions} Change template to "CURRENT/index"
+Sep 04 14:29:10 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/plugins/alSignupPlugin/modules/alSignup/templates/indexSuccess.php"
+Sep 04 14:29:10 symfony [debug] {sfPropelLogger} prepare: SELECT alsignup_newsletter_adverts.NEWSLETTER_ADVERTS_ID, alsignup_newsletter_adverts.ADVERTISED FROM `alsignup_newsletter_adverts`
+Sep 04 14:29:10 symfony [info] {sfPHPView} Decorate content with "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:29:10 symfony [info] {sfPHPView} Render "/home/timmy/workspace/milkshake/apps/frontend/templates/layout.php"
+Sep 04 14:29:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 14:29:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 14:29:10 symfony [info] {sfWebDebugLogger} Configuration 3.75 ms (9)
+Sep 04 14:29:10 symfony [info] {sfWebDebugLogger} Action "alSignup/submit" 18.02 ms (1)
+Sep 04 14:29:10 symfony [info] {sfWebDebugLogger} View "Success" for "alSignup/submit" 20.69 ms (1)
+Sep 04 14:29:11 symfony [info] {sfWebResponse} Send content (123419 o)

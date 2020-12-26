@@ -1,0 +1,153 @@
+MilkShake:
+  m1:
+    name: Blueberry
+    url_slug: sfdgsdg @2342sdfaT44444TTasdfsf & adsfasfasfd'' asdfasf
+    calories: 200
+    image_url: blueberry.jpg
+  m2:
+    name: Chocolate Digestive
+    url_slug: Chocolate Flavor
+    calories: 400
+    image_url: chocolate_digestive.jpg
+  m3:
+    name: Raspberry
+    url_slug: raspberry flavor
+    calories: 250
+    image_url: raspberry.jpg
+  m4:
+    name: Cappachino
+    url_slug: cappachino flavor
+    calories: 450
+    image_url: cappachino.jpg
+  m5:
+    name: Kiwi
+    url_slug: kiwi flavor
+    calories: 200
+    image_url: kiwi.jpg
+  m6:
+    name: Strawberry Blueberry
+    url_slug: strawberry bluberry flavor
+    calories: 400
+    image_url: strawberry_blueberry.jpg
+  m7:
+    name: Strawberry
+    url_slug: strawberry flavor
+    calories: 380
+    image_url: strawberry.jpg
+  m8:
+    name: Blackberry
+    url_slug: blackberry flavor
+    calories: 400
+    image_url: blackberry.jpg
+  m9:
+    name: Strawberry Blackberry
+    url_slug: strawberry blackberry flavor
+    calories: 380
+    image_url: strawberry_blackberry.jpg
+flavor:
+  f1:
+    name: Banana
+  f2:
+    name: Strawberry
+  f3:
+    name: Cheesecake
+  f4:
+    name: Chocolate
+  f5:
+    name: Vanilla
+  f6:
+    name: Custard
+  f7:
+    name: Apple
+  f8:
+    name: Kiwi
+  f9:
+    name: Blackberry
+  f10:
+    name: Chocolate Digestives
+  f11:
+    name: Lime
+  f12:
+    name: Lemon
+  f13:
+    name: Raspberry
+  f14:
+    name: Coffee
+  f15:
+    name: Blueberry
+  f16:
+    name: Orange
+Milkshakeflavor:
+  mf1:
+    milkshake_id:  m1
+    flavor_id:    f15
+  mf2:
+    milkshake_id:  m2
+    flavor_id:    f10
+  mf3:
+    milkshake_id:  m3
+    flavor_id:    f13
+  mf4:
+    milkshake_id:  m4
+    flavor_id:    f14
+  mf5:
+    milkshake_id:  m5
+    flavor_id:    f8
+  mf6:
+   milkshake_id:  m6
+   flavor_id:      f1
+  mf7:
+   milkshake_id:  m6
+   flavor_id:       f2
+  mf8:
+    milkshake_id:  m6
+    flavor_id:    f3
+  mf9:
+    milkshake_id:  m8
+    flavor_id:    f9
+  mf10:
+    milkshake_id:  m9
+    flavor_id:    f2
+  mf11:
+    milkshake_id:  m9
+    flavor_id:    f15
+StoreLocation:
+  l1:
+    address1: The Strand
+    address2:
+    postcode: wc2r we4
+    city: london
+    country: UK
+    phone: +44 (0)208 789 9875
+    fax: +44 (0)208 789 9876
+  l2:
+    address1: Bermondsey Stree
+    address2:
+    postcode: SE1 3TQ
+    city: London
+    country: UK
+    phone: +44 (0)207 939 4567
+    fax: +44 (0)208 789 9876
+Vacancy:
+  va1:
+    locations_id: l1
+    closing_date: 2008-09-09
+VacancyI18n:
+  v1:
+    id: va1
+    position: Bonzza Shaker
+    position_description: |
+     Calling all shaker dudes/dudettes to Milkshake. Must shake shakes and work the till
+    culture: en_AU
+  v2:
+    id: va1
+    position: Milkshaker
+    position_description: |
+      Calling all shakers to Milkshake. Must shake shakes and work the till
+    culture: en_GB
+  v3:
+    id: va1
+    position: Un Milkshaker
+    position_description: |
+      Appeler tous les dispositifs trembleurs au milkshake. Doit secouer des secousses et travailler jusqu'Ã
+    culture: fr_FR  

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" noXsd="true" package="plugins.alSignupPlugin.lib.model">
+  <table name="alsignup_newsletter_adverts" idMethod="native" phpName="AlSignupNewsletterAds">
+    <column name="newsletter_adverts_id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="advertised" type="VARCHAR" size="30" required="true" />
+	</table>
+
+
+	 <table name="alsignup_newsletter_signups" idMethod="native" phpName="AlSignupNewsletterSignup">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="first_name" type="VARCHAR" size="20" required="true" />
+	  <column name="surname" type="VARCHAR" size="20" required="true" />
+		<column name="email" type="VARCHAR" size="100" required="true" />
+		<column name="activation_key" type="VARCHAR" size="100" required="true" />
+  	<column name="activated" type="BOOLEAN" default="0" required="true" />
+    <column name="newsletter_adverts_id" type="INTEGER" required="true"/>
+    <foreign-key foreignTable="alsignup_newsletter_adverts" onDelete="CASCADE">
+        <reference local="newsletter_adverts_id" foreign="newsletter_adverts_id" />
+    </foreign-key>
+		<column name="created_at" type="TIMESTAMP" required="true" />
+		<column name="updated_at" type="TIMESTAMP" required="true" />
+   </table>
+</database>

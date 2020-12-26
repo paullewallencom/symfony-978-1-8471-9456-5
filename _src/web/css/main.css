@@ -1,0 +1,37 @@
+.selectedPageBox{
+        padding: 3px 6px;
+        border: 1px solid #000000;
+        background-color: #000000;
+        color: #ffffff;
+        }
+
+
+        a.pageLink:link{
+                padding: 3px 6px;
+                border: 1px solid #000000;
+                background-color: #ffffff;
+                color: #000000;
+                text-decoration: none;
+
+        }
+
+
+        a.pageLink:visited{
+                padding: 3px 6px;
+                border: 1px solid #000000;
+                background-color: #ffffff;
+                color: #000000;
+                text-decoration: none;
+
+        }
+
+        a.pageLink:hover{
+                padding: 3px 6px;
+                border: 1px solid #000000;
+                background-color: #000000;
+                color: #ffffff;
+                text-decoration: none;
+        }
+
+.errorMessage{ color: red; font-weight: bold}
+.boxError{ border: 2px solid red;}

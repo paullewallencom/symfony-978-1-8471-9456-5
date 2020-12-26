@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" noXsd="true" package="lib.model">
+
+    <table name="milkshakes" idMethod="native" phpName="Milkshake">
+        <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" index="true" />
+        <column name="name" type="VARCHAR" size="100" required="true" index="true"  />
+        <column name="image_url" type="VARCHAR" size="255" required="true" />
+        <column name="thumb_url" type="VARCHAR" size="255" required="true" />
+        <column name="calories" type="FLOAT" required="true" />
+        <column name="created_at" type="TIMESTAMP" required="true" />
+        <column name="updated_at" type="TIMESTAMP" required="true" />
+        <index name="milkshake_name_index">
+            <index-column name="name"/>
+        </index>
+        <column name="url_slug" type="VARCHAR" size="100" required="true" />
+        <column name="views" type="INTEGER" default="0"/>
+    </table>
+
+    <table name="flavors" idMethod="native" phpName="Flavor">
+        <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+        <column name="name" type="VARCHAR" size="20" required="true" />
+        <column name="created_at" type="TIMESTAMP" required="true" />
+    </table>
+
+    <table name="milkshake_flavors" idMethod="native" phpName="MilkshakeFlavor">
+        <column name="milkshake_id" primaryKey="true" type="INTEGER" required="true" />
+        <column name="flavor_id" primaryKey="true" type="INTEGER" required="true" />
+        <foreign-key foreignTable="flavors" onDelete="CASCADE">
+            <reference local="flavor_id" foreign="id" />
+        </foreign-key>
+        <foreign-key foreignTable="milkshakes" onDelete="CASCADE">
+            <reference local="milkshake_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="store_locations" idMethod="native" phpName="StoreLocation">
+        <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+        <column name="address1" type="VARCHAR" size="100" required="true" />
+        <column name="address2" type="VARCHAR" size="100" required="true" />
+        <column name="address3" type="VARCHAR" size="50" required="true" />
+        <column name="postcode" type="VARCHAR" size="8" required="true" />
+        <column name="city" type="VARCHAR" size="50" required="true" />
+        <column name="country" type="VARCHAR" size="50" required="true" />
+        <column name="phone" type="VARCHAR" size="20" required="true" />
+        <column name="fax" type="VARCHAR" size="20" required="true" />
+    </table>
+
+
+   <table name="vacancies" idMethod="native" phpName="Vacancy" isI18N="true" i18nTable="vacancies_i18n" >
+      <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true"/>
+      <column name="locations_id" type="INTEGER" required="true" />
+        <foreign-key foreignTable="store_locations" onDelete="CASCADE">
+          <reference local="locations_id" foreign="id" />
+        </foreign-key>
+      <column name="closing_date" type="TIMESTAMP" required="true" />
+    </table>
+
+
+    <table name="vacancies_i18n" idMethod="native" phpName="VacancyI18n">
+      <column name="id" type="INTEGER" required="true" primaryKey="true"/>
+       <foreign-key foreignTable="vacancies" onDelete="CASCADE">
+          <reference local="id" foreign="id" />
+        </foreign-key>
+
+      <column name="culture" type="VARCHAR" size="7" required="true" isCulture="true" primaryKey="true"  />
+
+      <column name="position" type="VARCHAR" size="30" required="true" />
+      <column name="position_description" type="VARCHAR" size="100" required="true" />
+    </table>
+</database>

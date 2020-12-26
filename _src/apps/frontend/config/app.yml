@@ -1,0 +1,3 @@
+# default values
+all:
+  ez_lib_dir:  <?php echo sfConfig::get('sf_root_dir') ?>/lib/vendors/ezcomponents/

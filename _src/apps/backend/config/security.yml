@@ -1,0 +1,7 @@
+default:
+  is_secure: on
+
+#Set the credentials for the delete action
+
+delete:
+  credentials:      [[[delete, edit], admin]]
